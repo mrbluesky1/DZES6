@@ -24,24 +24,3 @@ const createTodo = function () {
     }
     input.value = ''
 }
-
-
-createButton.addEventListener('click', createTodo)
-input.addEventListener('keydown', (e) => e.keyCode === 13 ? createTodo() : false)
-
-// const createTodo = function () {
-//     if (input.value.trim() === '') {
-//         return false
-//     } else {
-//         const div = document.createElement('div')
-//         const text = document.createElement('h3')
-//         div.setAttribute('class', 'block_text')
-//         text.setAttribute('class', 'text')
-//
-//         text.innerText = input.value.trim()
-//         div.append(text)
-//         todoList.append(div)
-//     }
-//     input.value = ''
-// }
-//
